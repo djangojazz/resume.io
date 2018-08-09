@@ -38,17 +38,19 @@ $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-
 //   @include angular-material-theme($dark-theme);
 // }
 
-$jlightblue : #8cc3e7;
-$jgray: #5f676f;
-$jblue: #003267;
-$jmedblue: #497AAF;
+$primary: #3265ff;
+$p-light: #8cc3e7;
+$p-dark: #003267;
+$secondary: #497aaf;
+$slight: #c6eeff;
+$sdark: #023354;
 $warn: #f0adad;
 
-.clr-p { color: $jblue; }
-.clr-l { color: $jlightblue; }
-.clr-d { color: $jgray; }
-.clr-sl { color: $jblue; }
-.clr-sd { color: $jlightblue; }
+.clr-p { color: $primary; }
+.clr-l { color: $p-light; }
+.clr-d { color: $p-dark; }
+.clr-sl { color: $slight; }
+.clr-sd { color: $sdark; }
 .clr-w { color: $warn; }
 
 body { 
@@ -91,8 +93,8 @@ html,body,#wrapper {
   height:20px;
   width:100%;
   position: fixed;
-  background-color: $jblue;
-  color: $jlightblue;
+  background-color: $sdark;
+  color: $slight;
   text-align: center;
 }
 
@@ -100,31 +102,18 @@ html,body,#wrapper {
 margin: 1%;
 width: 120px;
 text-align:left;
-  background-color: $jmedblue;
+  background-color: $secondary;
   color: white;
 }
 
-.btn-b {
-    margin: 1%;
-    width: 120px;
-    text-align:left;
-      background-color: blue;
-      color: red;
-    }
 
 .expander  {
-  background-color: $jblue;
-  color: $jlightblue;
+  background-color: $sdark;
+  color: $slight;
 }
 
 .expander-top {
   color: whitesmoke;
-}
-
-.expander-bottom {
-  color: $jlightblue;
-  margin-top: 5px;
-  padding: 5px;
 }
 
 .warning {
