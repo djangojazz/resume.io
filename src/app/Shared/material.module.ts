@@ -10,6 +10,7 @@ import {
   MatSidenavModule, 
   MatSlideToggleModule,
   MatTableModule,
+  MatToolbarModule,
   MatPaginatorModule,
   MatSortModule } from '@angular/material';
 
@@ -23,6 +24,7 @@ import {
     MatSidenavModule, 
     MatSlideToggleModule,
     MatTableModule,
+    MatToolbarModule,
     MatPaginatorModule,
     MatSortModule
   ],
