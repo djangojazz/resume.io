@@ -1,4 +1,3 @@
-<h2>Skills</h2>
 <div *ngFor="let skill of Skills">
     <ul><strong>{{skill.MainSkill}}</strong>
         <div *ngFor="let sub of skill.SubSkills">
@@ -6,3 +5,11 @@
         </div>
     </ul>
 </div>
+
+<div *ngFor="let cert of Certs">
+        <ul><strong>{{cert.MainSkill}}</strong>
+            <div *ngFor="let sub of cert.SubSkills">
+                <ul>{{sub}}</ul>
+            </div>
+        </ul>
+    </div>

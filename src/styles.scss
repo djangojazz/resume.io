@@ -62,11 +62,6 @@ body {
   padding: 5px;
 }
 
-.version-info {
-  font-size: 8pt;
-  float: right;
-}
-  
 html,body,#wrapper {
   height:100%;
   padding:0;
@@ -81,31 +76,13 @@ html,body,#wrapper {
   position:absolute;
 }
 
-#content {
-  top:0;
-  bottom:20px;
-  width:100%;
-  background:black;
-  color:white;
-}
-#footer {
-  bottom:0;
-  height:20px;
-  width:100%;
-  position: fixed;
-  background-color: $sdark;
-  color: $slight;
-  text-align: center;
-}
-
 .mat-button {
 margin: 1%;
-width: 120px;
+width: 150px;
 text-align:left;
   background-color: $secondary;
   color: white;
 }
-
 
 .expander  {
   background-color: $sdark;
