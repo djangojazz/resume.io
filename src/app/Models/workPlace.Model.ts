@@ -1,5 +1,4 @@
 import { Skill  } from "./skill.Model";
-import { start } from "repl";
 
 export class WorkPlace {
     workPlaceName: string;

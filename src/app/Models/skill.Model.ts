@@ -1,9 +1,9 @@
 export class Skill {
-    mainSkill: string;
-    subSkills: string[] = [];
+    MainSkill: string;
+    SubSkills: string[] = [];
 
     constructor(mainSkill: string, subSkills?: string[]) {
-        this.mainSkill = mainSkill;
-        this.subSkills = subSkills;
+        this.MainSkill = mainSkill;
+        this.SubSkills = subSkills;
     }
 }

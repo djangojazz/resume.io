@@ -10,6 +10,7 @@ import { WorkHistoryComponent  } from "./work-history.component";
 import { PageNotFoundComponent  } from "./page-not-found.component";
 
 import { AppComponent } from './app.component';
+import { SkillsService } from './Services/skills.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { AppComponent } from './app.component';
     AppRoutingModule,
     MaterialModule
   ],
-  providers: [],
+  providers: [SkillsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
