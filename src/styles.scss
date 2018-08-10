@@ -97,6 +97,28 @@ text-align:left;
   color: $warn
 }
 
-.mat-card {
-  margin: 2%;
+.sectionHeader {
+  color: $p-dark;
+}
+
+mat-card {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.cardData {
+  margin: 10px;
+  padding: 10px;
+  color: $p-dark;
+  box-shadow: 0 0 5px 0px $p-dark inset;
+  background-color: $p-light;
+}
+
+.cardData:hover {
+  color: black;
+}
+
+.mat-list-icon {
+  position: relative;
+  margin-right: 10px;
 }

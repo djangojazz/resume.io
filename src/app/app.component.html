@@ -1,21 +1,22 @@
-<mat-drawer-container class="content-container" autosize>
-  <mat-toolbar id="header">
-          <button mat-button (click)="drawer.toggle()">
-                  <i class="material-icons">menu</i> Menu
-              </button>
-            <h1 id="headerTitle">{{title}}</h1>
-        </mat-toolbar>
-<mat-drawer #drawer class="sidenav-drawer" mode="over">
-<button mat-button routerLink="skills" routerLinkActive="active" (click)="navChanged('Skills')">
-    <i class="material-icons">class</i> Skills
-</button>
-<br />
-<button mat-button routerLink="workHistory" routerLinkActive="active"  (click)="navChanged('WorkHistory')">
-    <i class="material-icons">date_range</i> Work History
-</button>
-</mat-drawer>
+<mat-toolbar id="header">
+    <button mat-button (click)="drawer.toggle()">
+            <i class="material-icons">menu</i> Menu
+        </button>
+    <h1 id="headerTitle">{{title}}</h1>
+</mat-toolbar>
 
-<div class="sidenav-content">
-<router-outlet></router-outlet>
-</div>
+<mat-drawer-container class="content-container" autosize>
+    <mat-drawer #drawer class="sidenav-drawer" mode="over">
+        <button mat-button routerLink="skills" routerLinkActive="active" (click)="navChanged('Skills')">
+            <i class="material-icons">class</i> Skills
+        </button>
+        <br />
+        <button mat-button routerLink="workHistory" routerLinkActive="active"  (click)="navChanged('WorkHistory')">
+            <i class="material-icons">date_range</i> Work History
+        </button>
+    </mat-drawer>
+
+    <div class="sidenav-content">
+        <router-outlet></router-outlet>
+    </div>
 </mat-drawer-container>
