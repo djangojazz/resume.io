@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Brett Morin - Skills';
+  title = 'Brett Morin - Skills And Certifications';
 
   public navChanged(nav: string) {
     this.title = `Brett Morin - ${nav}`;

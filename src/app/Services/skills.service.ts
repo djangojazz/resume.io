@@ -8,14 +8,17 @@ export class SkillsService {
     ListCurrentCertifications(): Observable<Skill[]> {
         return of(
             [
-                new Skill(".NET Framework 4", [
+                new Skill("Microsoft .NET Framework 4", [
                     "Data Access", 
                     "Web Applications"
                 ]),
-                new Skill("SQL Server 2008", [
+                new Skill("Microsoft SQL Server 2008", [
                     "Business Intelligence Development and Maintenance", 
                     "Database Development",
                     "Implementation and Maintenance"
+                ]),
+                new Skill("Comptia", [
+                    "A+", "Network+"
                 ])
             ]
         )

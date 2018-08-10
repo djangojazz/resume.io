@@ -8,9 +8,9 @@ import { PageNotFoundComponent } from '../page-not-found.component';
 @NgModule({
   imports: [
     RouterModule.forRoot([
-      { path: 'skills', component: SkillsComponent },
+      { path: 'skillsAndCerts', component: SkillsComponent },
       { path: 'workHistory', component: WorkHistoryComponent },
-      { path: '', redirectTo: 'skills', pathMatch: 'full' },
+      { path: '', redirectTo: 'skillsAndCerts', pathMatch: 'full' },
       { path: '**', component: PageNotFoundComponent }
     ])
     //, { enableTracing: true })
