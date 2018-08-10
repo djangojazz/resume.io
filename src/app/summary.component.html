@@ -1,0 +1,39 @@
+<mat-card>
+    <h1 class="sectionHeader">Mission Statment</h1>
+    <ul class="cardData" *ngFor="let m of Mission">    
+        <svg mat-list-icon width="15" height="15">
+                <circle cx="10" cy="10" r="5" fill="black" />
+        </svg>
+        <strong>{{m.MainSkill}}</strong>
+        <ul *ngFor="let sub of m.SubSkills">
+            {{sub}}
+        </ul>
+    </ul>
+</mat-card>
+    
+<mat-card>
+    <h1 class="sectionHeader">About Me</h1>
+    <ul class="cardData" *ngFor="let a of AboutMe">    
+        <svg mat-list-icon width="15" height="15">
+                <circle cx="10" cy="10" r="5" fill="black" />
+        </svg>
+        <strong>{{a.MainSkill}}</strong>
+        <ul *ngFor="let sub of a.SubSkills">
+            {{sub}}
+        </ul>
+    </ul>
+</mat-card>
+
+<mat-card>
+    <h1 class="sectionHeader">Education</h1>
+    <ul class="cardData" *ngFor="let m of Educational">    
+        <svg mat-list-icon width="15" height="15">
+                <circle cx="10" cy="10" r="5" fill="black" />
+        </svg>
+        <strong>{{m.WorkPlaceName}} {{m.Location}} - {{m.Position}}
+            &nbsp;&nbsp;&nbsp;&nbsp;From {{m.StartDate | date}} to {{m.EndDate | date}}</strong>
+        <ul *ngFor="let work of m.WorkedOn">
+            {{work.MainSkill}}
+        </ul>
+    </ul>
+</mat-card>

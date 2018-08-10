@@ -7,6 +7,10 @@
 
 <mat-drawer-container class="content-container" autosize>
     <mat-drawer #drawer class="sidenav-drawer" mode="over">
+        <button mat-button routerLink="summary" routerLinkActive="active" (click)="navChanged('Summary')">
+                <i class="material-icons">local_library</i> Skills
+        </button>
+        <br />
         <button mat-button routerLink="skillsAndCerts" routerLinkActive="active" (click)="navChanged('Skills And Certifications')">
             <i class="material-icons">class</i> Skills
         </button>
