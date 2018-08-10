@@ -1,27 +1,25 @@
-<mat-list>
-    <mat-card>
-        <h1 class="sectionHeader">Skills</h1>
-        <ul class="cardData" *ngFor="let skill of Skills">    
-            <svg mat-list-icon width="15" height="15">
-                    <circle cx="10" cy="10" r="5" fill="black" />
-            </svg>
-            <strong>{{skill.MainSkill}}</strong>
-            <ul *ngFor="let sub of skill.SubSkills">
-                {{sub}}
-            </ul>
+<mat-card>
+    <h1 class="sectionHeader">Skills</h1>
+    <ul class="cardData" *ngFor="let skill of Skills">    
+        <svg mat-list-icon width="15" height="15">
+                <circle cx="10" cy="10" r="5" fill="black" />
+        </svg>
+        <strong>{{skill.MainSkill}}</strong>
+        <ul *ngFor="let sub of skill.SubSkills">
+            {{sub}}
         </ul>
-    </mat-card>
+    </ul>
+</mat-card>
 
-    <mat-card>
-        <h1 class="sectionHeader">Certifications</h1>
-        <ul class="cardData" *ngFor="let cert of Certs">    
-            <svg mat-list-icon width="15" height="15">
-                    <circle cx="10" cy="10" r="5" fill="black" />
-            </svg>
-            <strong>{{cert.MainSkill}}</strong>
-            <ul *ngFor="let sub of cert.SubSkills">
-                {{sub}}
-            </ul>
+<mat-card>
+    <h1 class="sectionHeader">Certifications</h1>
+    <ul class="cardData" *ngFor="let cert of Certs">    
+        <svg mat-list-icon width="15" height="15">
+                <circle cx="10" cy="10" r="5" fill="black" />
+        </svg>
+        <strong>{{cert.MainSkill}}</strong>
+        <ul *ngFor="let sub of cert.SubSkills">
+            {{sub}}
         </ul>
-    </mat-card>
-</mat-list>
+    </ul>
+</mat-card>

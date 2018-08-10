@@ -1,1 +1,12 @@
-<h2>Work History</h2>
+<mat-card>
+    <ul class="cardData" *ngFor="let job of Jobs">    
+        <svg mat-list-icon width="15" height="15">
+                <circle cx="10" cy="10" r="5" fill="black" />
+        </svg>
+        <strong>{{job.WorkPlaceName}} {{job.Location}} - {{job.Position}}
+            &nbsp;&nbsp;&nbsp;&nbsp;From {{job.StartDate | date}} to {{job.EndDate | date}}</strong>
+        <ul *ngFor="let work of job.WorkedOn">
+            {{work.MainSkill}}
+        </ul>
+    </ul>
+</mat-card>

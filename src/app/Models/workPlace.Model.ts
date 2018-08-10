@@ -1,17 +1,19 @@
 import { Skill  } from "./skill.Model";
 
 export class WorkPlace {
-    workPlaceName: string;
-    startDate: Date;
-    endDate: Date;
-    position: string;
-    workedOn: Skill[] = [];
+    WorkPlaceName: string;
+    Location: string;
+    StartDate: Date;
+    EndDate: Date;
+    Position: string;
+    WorkedOn: Skill[] = [];
 
-    constructor(workPlaceName: string, startDate: Date, endDate: Date, position: string, workedOn: Skill[]) {
-        this.workPlaceName = workPlaceName;
-        this.startDate = startDate;
-        this.endDate = endDate;
-        this.position = position;
-        this.workedOn = workedOn;
+    constructor(workPlaceName: string, location: string, startDate: Date, endDate: Date, position: string, workedOn: Skill[]) {
+        this.WorkPlaceName = workPlaceName;
+        this.Location = location;
+        this.StartDate = startDate;
+        this.EndDate = endDate;
+        this.Position = position;
+        this.WorkedOn = workedOn;
     }
 }
