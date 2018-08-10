@@ -1,19 +1,22 @@
 <mat-list>
     <h2 mat-header>Skills</h2>
-    <mat-list-item *ngFor="let skill of Skills">
-        <mat-icon mat-list-icon>done</mat-icon>
-        <h3 mat-line><strong>{{skill.MainSkill}}</strong></h3>
-        <p mat-line *ngFor="let sub of skill.SubSkills">
-                &nbsp;&nbsp;&nbsp;&nbsp;{{sub}}
-        </p>
-    </mat-list-item>
-    <hr />
+    <mat-card>
+        <mat-list-item *ngFor="let skill of Skills">
+            <mat-icon mat-list-icon>done</mat-icon>
+            <h3 mat-line><strong>{{skill.MainSkill}}</strong></h3>
+            <p mat-line *ngFor="let sub of skill.SubSkills">
+                    &nbsp;&nbsp;&nbsp;&nbsp;{{sub}}
+            </p>
+        </mat-list-item>
+    </mat-card>
     <h2 mat-header>Certifications</h2>
-    <mat-list-item *ngFor="let cert of Certs">
-        <mat-icon mat-list-icon>done</mat-icon>
-        <h3 mat-line><strong>{{cert.MainSkill}}</strong></h3>
-        <p mat-line *ngFor="let sub of cert.SubSkills">
-                &nbsp;&nbsp;&nbsp;&nbsp;{{sub}}
-        </p>
-    </mat-list-item>
+    <mat-card>
+        <mat-list-item *ngFor="let cert of Certs">
+            <mat-icon mat-list-icon>done</mat-icon>
+            <h3 mat-line><strong>{{cert.MainSkill}}</strong></h3>
+            <p mat-line *ngFor="let sub of cert.SubSkills">
+                    &nbsp;&nbsp;&nbsp;&nbsp;{{sub}}
+            </p>
+        </mat-list-item>
+    </mat-card>
 </mat-list>
