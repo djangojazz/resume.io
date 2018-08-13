@@ -18,8 +18,8 @@
                 <circle cx="10" cy="10" r="5" fill="black" />
         </svg>
         <strong>{{a.MainSkill}}</strong>
-        <ul *ngFor="let sub of a.SubSkills">
-            {{sub}}
+        <ul *ngFor="let link of a.Links">
+            <a [attr.href]="link.Link">{{link.Text}}</a> 
         </ul>
     </ul>
 </mat-card>

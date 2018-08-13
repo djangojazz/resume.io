@@ -7,7 +7,7 @@ export class WorkPlace {
     EndDate: Date;
     Position: string;
     WorkedOn: Skill[] = [];
-
+    
     constructor(workPlaceName: string, location: string, startDate: Date, endDate: Date, position: string, workedOn: Skill[]) {
         this.WorkPlaceName = workPlaceName;
         this.Location = location;

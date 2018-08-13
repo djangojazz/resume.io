@@ -3,6 +3,7 @@ import { Observable, of } from "rxjs"
 
 import { Skill } from '../Models/skill.Model';
 import { WorkPlace } from '../Models/workPlace.Model';
+import { Link } from '../Models/link.Model';
 
 @Injectable()
 export class SummaryService {
@@ -23,10 +24,10 @@ export class SummaryService {
     AboutMe(): Observable<Skill[]> {
         return of([
                 new Skill("I enjoy technology as a career and also in my spare time. I am constantly trying to learn new things and implement them." +
-                "  I also like to play video games, play guitar, hike, and hangout with my family.", [
-                    "See my profile on LinkedIn: https://www.linkedin.com/in/brettmorin",
-                    "Check out my github repositories for some code at: https://github.com/djangojazz",
-                    "Stack Overflow: https://stackoverflow.com/users/580428/djangojazz"
+                "  I also like to play video games, play guitar, hike, and hangout with my family.", [], [
+                    new Link("See my profile on LinkedIn: https://www.linkedin.com/in/brettmorin", "https://www.linkedin.com/in/brettmorin"),
+                    new Link("Check out my github repositories for some code at: https://github.com/djangojazz", "https://github.com/djangojazz"),
+                    new Link("Stack Overflow: https://stackoverflow.com/users/580428/djangojazz", "https://stackoverflow.com/users/580428/djangojazz")
                 ])
         ])
     }
